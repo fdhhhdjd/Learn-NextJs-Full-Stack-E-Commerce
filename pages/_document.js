@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head>
           <meta
             name="description"
-            content="Tien Tai Dev E-commerce website with Next.js"
+            content="Dev AT E-commerce website with Next.js"
           />
           <link
             rel="stylesheet"

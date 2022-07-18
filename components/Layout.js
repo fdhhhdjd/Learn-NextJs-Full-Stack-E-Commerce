@@ -1,17 +1,17 @@
-import React from "react";
-import Navbar from "./Navbar";
-import Notify from "./Notify";
-const Layout = ({ children }) => {
-  return (
-    <React.Fragment>
-      <div className="container">
-        <Navbar />
-        <Notify />
+import React from 'react'
+import NavBar from './NavBar'
+import Notify from './Notify'
+import Modal from './Modal'
 
-        {children}
-      </div>
-    </React.Fragment>
-  );
-};
+function Layout({children}) {
+    return (
+        <div className="container">
+            <NavBar />
+            <Notify />
+            <Modal />
+            {children}
+        </div>
+    )
+}
 
-export default Layout;
+export default Layout

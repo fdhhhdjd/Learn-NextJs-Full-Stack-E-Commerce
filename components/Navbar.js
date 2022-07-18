@@ -1,19 +1,22 @@
-import Cookie from "js-cookie";
+import React, { useContext } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React from "react";
-import { useMyContext } from "../store/GlobalState";
-const Navbar = () => {
+import { DataContext } from "../store/GlobalState";
+import Cookie from "js-cookie";
+
+function NavBar() {
   const router = useRouter();
-  const { state, dispatch } = useMyContext();
+  const { state, dispatch } = useContext(DataContext);
   const { auth, cart } = state;
+
   const isActive = (r) => {
     if (r === router.pathname) {
-      return "active";
+      return " active";
     } else {
       return "";
     }
   };
+
   const handleLogout = () => {
     Cookie.remove("refreshtoken", { path: "api/auth/accessToken" });
     localStorage.removeItem("firstLogin");
@@ -21,6 +24,23 @@ const Navbar = () => {
     dispatch({ type: "NOTIFY", payload: { success: "Logged out!" } });
     return router.push("/");
   };
+
+  const adminRouter = () => {
+    return (
+      <>
+        <Link href="/users">
+          <a className="dropdown-item">Users</a>
+        </Link>
+        <Link href="/create">
+          <a className="dropdown-item">Products</a>
+        </Link>
+        <Link href="/categories">
+          <a className="dropdown-item">Categories</a>
+        </Link>
+      </>
+    );
+  };
+
   const loggedRouter = () => {
     return (
       <li className="nav-item dropdown">
@@ -50,7 +70,7 @@ const Navbar = () => {
           <Link href="/profile">
             <a className="dropdown-item">Profile</a>
           </Link>
-          {/* {auth.user.role === "admin" && adminRouter()} */}
+          {auth.user.role === "admin" && adminRouter()}
           <div className="dropdown-divider"></div>
           <button className="dropdown-item" onClick={handleLogout}>
             Logout
@@ -59,6 +79,7 @@ const Navbar = () => {
       </li>
     );
   };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link href="/">
@@ -94,12 +115,12 @@ const Navbar = () => {
                       background: "#ed143dc2",
                       borderRadius: "50%",
                       top: "-10px",
-                      right: "10px",
+                      right: "-10px",
                       color: "white",
                       fontSize: "14px",
                     }}
                   >
-                    4
+                    {cart.length}
                   </span>
                 </i>{" "}
                 Cart
@@ -109,7 +130,7 @@ const Navbar = () => {
           {Object.keys(auth).length === 0 ? (
             <li className="nav-item">
               <Link href="/signin">
-                <a className={"nav-link" + isActive("/signin")}>
+                <a className={"nav-link"}>
                   <i className="fas fa-user" aria-hidden="true"></i> Sign in
                 </a>
               </Link>
@@ -121,6 +142,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+}
 
-export default Navbar;
+export default NavBar;

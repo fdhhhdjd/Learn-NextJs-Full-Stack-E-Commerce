@@ -1,28 +1,17 @@
-# NEXTJS - Ecommerce
-> Build a E-commerce Full Stack with Nextjs + Mongodb + React Hook + Bootstrap 4
-> Instructions on how to use nextjs in conjunction with mongodb to build a basic e-commerce website.
+# NextJs Code By: Nguyễn Tiến Tài
 
-## Demo: https://nextjs-ecommerce-six.vercel.app/
-
-## Author: Dev AT
-
-## Youtube tutorials: https://www.youtube.com/watch?v=UsEN7LGefhA&list=PLs4co9a6NhMzf-5tIWfpzDCgdMyg-CceX
-
-## Install dependencies 
-### `npm install`
-
-## Connect to your mongodb and add info in next.config.js
-
-## Run the project http://localhost:3000
-### `npm run dev`
+## WebSite: ( hiện tại chưa có ^_^ Xem code thuiiiii )
 
 
-### User interface 
+## Tài Khoản Donate li Cf để có động lực code cho anh em tham khảo 😄😄
 
-![alt](https://res.cloudinary.com/devat-channel/image/upload/v1610956436/nextjs_media/2_dgx2op.png)
+![giphy](https://3.bp.blogspot.com/-SzGvXn2sTmw/V6k-90GH3ZI/AAAAAAAAIsk/Q678Pil-0kITLPa3fD--JkNdnJVKi_BygCLcB/s1600/cf10-fbc08%2B%25281%2529.gif)
 
-![alt](https://res.cloudinary.com/devat-channel/image/upload/v1610956526/nextjs_media/3_dkmrq1.png)
+## Mk: NGUYEN TIEN TAI
 
-### Admin interface 
+## STK: 1651002972052
 
-![alt](https://res.cloudinary.com/devat-channel/image/upload/v1610956354/nextjs_media/Untitled_axeubb.png)
+## Chi Nhánh: NGAN HANG TMCP AN BINH (ABBANK)
+
+## SUPORT CONTACT:https://profile-forme.surge.sh/
+ 

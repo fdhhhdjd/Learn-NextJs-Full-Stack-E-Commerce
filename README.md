@@ -1,4 +1,4 @@
-# Note: Giao diện thì lấy trên mạng bạn các bạn nhé còn lại tự code 😄😄
+# Note: Giao diện thì lấy trên mạng bạn các bạn nhé còn lại tự code 😄
 # NextJs Code By: Nguyễn Tiến Tài
 
 ## WebSite: https://learn-next-js-full-stack-e-commerce.vercel.app/

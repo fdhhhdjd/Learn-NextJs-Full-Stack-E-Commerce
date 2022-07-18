@@ -83,7 +83,7 @@ function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link href="/">
-        <a className="navbar-brand">DEVAT</a>
+        <a className="navbar-brand">Tai Heo Dev</a>
       </Link>
       <button
         className="navbar-toggler"
@@ -115,7 +115,7 @@ function NavBar() {
                       background: "#ed143dc2",
                       borderRadius: "50%",
                       top: "-10px",
-                      right: "-10px",
+                      right: "10px",
                       color: "white",
                       fontSize: "14px",
                     }}

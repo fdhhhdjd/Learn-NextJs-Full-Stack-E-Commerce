@@ -1,5 +1,6 @@
 module.exports = {
   env: {
+    // BASE_URL: "http://localhost:3000",
     BASE_URL: "https://learn-next-js-full-stack-e-commerce.vercel.app/",
     MONGODB_URL:
       "mongodb+srv://fdhhhdjd:1471010a@e-commerce.icglfpu.mongodb.net/E-Commerce?retryWrites=true&w=majority",

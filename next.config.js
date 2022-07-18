@@ -16,7 +16,6 @@
 // };
 module.exports = {
   env: {
-    // BASE_URL: "http://localhost:3000",
     BASE_URL: process.env.BASE_URL,
     MONGODB_URL: process.env.MONGODB_URL,
     ACCESS_TOKEN_SECRET: process.env.ACCESS_TOKEN_SECRET,

@@ -14,6 +14,7 @@
 //     CLOUD_API: "https://api.cloudinary.com/v1_1/taithinhnam/image/upload",
 //   },
 // };
+require("dotenv").config();
 module.exports = {
   env: {
     // BASE_URL: "http://localhost:3000",
